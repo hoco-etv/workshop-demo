@@ -30,6 +30,7 @@ class SiteController extends Controller
                 'class' => VerbFilter::className(),
                 'actions' => [
                     'logout' => ['post'],
+                    'posttest' => ['post']
                 ],
             ],
         ];
@@ -59,5 +60,9 @@ class SiteController extends Controller
     public function actionIndex()
     {
         return $this->render('index');
+    }
+
+    public function actionPosttest() {
+        die(Yii::$app->request->post('name'));
     }
 }
