@@ -8,8 +8,7 @@ nbproject
 .buildpath
 .project
 .settings
-codecedption.yml
-
+codeception.yml
 # windows thumbnail cache
 Thumbs.db
 
