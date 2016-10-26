@@ -3,7 +3,8 @@
 $params = require(__DIR__ . '/params.php');
 
 $config = [
-    'id' => 'basic',
+  'id' => 'basic',
+  'name' => 'Goedzo, je hebt hem gevonden',
     'basePath' => dirname(__DIR__),
     'bootstrap' => ['log'],
     'components' => [
