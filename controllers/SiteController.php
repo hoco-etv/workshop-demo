@@ -30,7 +30,8 @@ class SiteController extends Controller
                 'class' => VerbFilter::className(),
                 'actions' => [
                     'logout' => ['post'],
-                    'posttest' => ['post']
+                    'posttest' => ['post'],
+                    'url' => ['get', 'post']
                 ],
             ],
         ];
@@ -57,9 +58,22 @@ class SiteController extends Controller
      *
      * @return string
      */
-    public function actionIndex()
+    public function actionIndex($name = '')
     {
-        return $this->render('index');
+        return $this->render('index', ['name' => $name]);
+    }
+
+    public function actionTime() {
+        $datetime = date('r');
+        return $this->render('time', ['datetime' => $datetime]);
+    }
+
+    public function actionLink() {
+        if(!Yii::$app->request->isPost) {
+          return $this->render('linkform');
+        }
+
+        return $this->render('link', ['link' => Yii::$app->request->post('link')]);
     }
 
     public function actionPosttest() {
