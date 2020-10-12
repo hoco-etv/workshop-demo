@@ -9,7 +9,7 @@ use yii\bootstrap\NavBar;
 use yii\widgets\Breadcrumbs;
 use app\assets\AppAsset;
 use app\controllers\AdminController;
-use maerduq\usm\components\Usm;
+// use maerduq\usm\components\Usm;
 
 AppAsset::register($this);
 ?>
@@ -48,7 +48,7 @@ AppAsset::register($this);
 
         echo Nav::widget([
             'options' => ['class' => 'navbar-nav navbar-right'],
-            'items' => Usm::getMenu()
+            'items' => [] //Usm::getMenu()
         ]);
         NavBar::end();
         ?>

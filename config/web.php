@@ -58,7 +58,7 @@ $config = [
             'showScriptName' => false,
             'rules' => [
                 // '<alias:\w+>' => 'site/<alias>',
-				['class' => 'maerduq\usm\components\RedirectRule']
+				// ['class' => 'maerduq\usm\components\RedirectRule']
             ],
         ],
         'formatter' => [
