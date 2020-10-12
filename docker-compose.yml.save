@@ -1,0 +1,10 @@
+version: '3'
+services:
+  phpfpm:
+    container_name: php
+    image: nanoninja/php-fpm
+    ports:
+      - 8000:8000
+    volumes:
+      - ./:/var/www/html
+?r=site%2Fsay&message=Hello+World?r=

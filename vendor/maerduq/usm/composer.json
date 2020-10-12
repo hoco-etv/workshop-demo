@@ -1,0 +1,25 @@
+{
+    "name": "maerduq/usm",
+    "description": "Yii2 module for content management for websites",
+    "keywords": ["yii", "cms", "usm"],
+    "homepage": "https://bitbucket.org/maerduq/usm",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Paul Marcelis",
+            "email": "pjmarcelis@gmail.com"
+        }
+    ],
+    "require": {
+        "yiisoft/yii2": ">=2.0.13",
+        "tinymce/tinymce": "~4.2.6",
+        "npm-asset/codemirror": "~5.8.0",
+        "npm-asset/bootbox": "~4.4.0",
+        "npm-asset/notifyjs-browser": "^0.4.2"
+    },
+    "autoload": {
+        "psr-4": {
+            "maerduq\\usm\\": "src/"
+        }
+    }
+}

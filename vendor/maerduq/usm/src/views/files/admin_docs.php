@@ -1,0 +1,1 @@
+<p>By uploading a file here, you can use the file in your website. After uploading, you can copy the link from the list below and use it for example in a page for a download link.</p>

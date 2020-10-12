@@ -1,0 +1,95 @@
+.device {
+    display: flex;
+    flex-direction: row;
+    height: 230px;
+    overflow: hidden;
+}
+
+.device-img {
+    width: 200px;
+    margin: auto 20px auto 0;
+    order: 1;
+}
+
+.device-img>img {
+    max-width: 200px;
+    max-height: 200px;
+}
+
+.device-info {
+    order: 2;
+    height: 100%;
+    width: auto;
+}
+
+.device-description {
+    max-height: 100px;
+    overflow-y: hidden;
+}
+
+.device-name {
+    font-size: 20pt;
+}
+
+.device-last-updated-2 {
+    display: none;
+}
+
+.device-last-updated {
+    display: unset;
+}
+
+.device-icons {
+    order: 3;
+    margin: auto 0 auto auto;
+    font-size: 40pt;
+}
+
+.device-glyph {
+    margin: auto 10px;
+}
+
+.device-report {
+    font-size: 14px;
+}
+
+@media screen and (max-width:1200px) {
+    .device {
+        height: unset;
+    }
+    .device-description {
+        max-height: 300px;
+    }
+}
+
+@media screen and (max-width:700px) {
+    .device {
+        flex-direction: column;
+        height: unset;
+    }
+    .device-img {
+        width: auto;
+        margin: auto;
+    }
+    .device-img>img {
+        max-width: 100%;
+        max-height: 200px;
+    }
+    .device-icons {
+        margin: auto;
+        font-size: 40pt;
+        margin-top: 30px;
+    }
+    .device-glyph {
+        margin: auto 10px;
+        display: inline-block;
+    }
+    .device-last-updated {
+        display: none;
+    }
+    .device-last-updated-2 {
+        display: unset;
+        order: 4;
+        margin-top: 10px;
+    }
+}

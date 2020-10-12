@@ -1,0 +1,1 @@
+<p>Hello and welcome with editing Textblocks! Did you know you can add things like <span class="label label-default">{{variable}}</span>, and replace the variable with something you want with the replace-array in your Textblock::read("&lt;name&gt;", ["&lt;find&gt;" => "&lt;replace&gt;"]) function.</p>

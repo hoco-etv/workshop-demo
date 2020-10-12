@@ -1,0 +1,67 @@
+#user-display-container {
+    text-align: center;
+}
+
+.user-display-panel {
+    text-align: left;
+    width: 30%;
+    display: inline-block;
+    margin: 7px;
+}
+
+.panel-picture {
+    display: inline-block;
+}
+
+.panel-picture>p {
+    font-size: 40px;
+    margin-right: 10px;
+}
+
+.panel-description {
+    display: inline-block;
+}
+
+.maillist-container {
+    text-align: center;
+}
+
+.maillist-display-panel {
+    text-align: left;
+    width: 22%;
+    display: inline-block;
+    margin: 10px;
+    vertical-align: top;
+}
+
+@media screen and (max-width: 1200px) {
+    .maillist-display-panel {
+        width: 45%;
+    }
+}
+
+@media screen and (max-width:650px) {
+    .maillist-display-panel {
+        width: 100%;
+        margin: auto;
+        margin-bottom: 20px;
+    }
+}
+
+.maillist-panel-heading {
+    display: flex;
+}
+
+.maillist-panel-heading>.maillist-name {
+    font-size: 17px;
+    margin: auto auto auto 0;
+}
+
+.maillist-panel-edit-button {
+    cursor: pointer;
+}
+
+.maillist-info-field {
+    font-style: italic;
+    margin-top: 12px;
+}

@@ -12,24 +12,41 @@
         "irc": "irc://irc.freenode.net/yii",
         "source": "https://github.com/yiisoft/yii2"
     },
-    "minimum-stability": "dev",
+    "minimum-stability": "stable",
     "require": {
-        "php": ">=5.4.0",
-        "yiisoft/yii2": "~2.0.5",
-        "yiisoft/yii2-bootstrap": "~2.0.0",
-        "yiisoft/yii2-swiftmailer": "~2.0.0"
+        "php": "~7.0",
+        "yidas/yii2-bower-asset": "~2.0.12",
+        "yiisoft/yii2": "2.0.20",
+        "yiisoft/yii2-bootstrap": "~2.0.8",
+        "kartik-v/yii2-widget-datetimepicker": "^1.4",
+        "kartik-v/yii2-widget-datepicker": "^1.4",
+        "kartik-v/yii2-widget-select2": "~2.0.0",
+        "yiisoft/yii2-swiftmailer": "~2.1.0",
+        "mpdf/mpdf": "~8.0.0",
+        "bower-asset/bootstrap": "^3.3",
+        "npm-asset/jquery": "^2.2",
+        "toriphes/yii2-widget-lazyload": "*",
+        "kartik-v/yii2-grid": "dev-master",
+        "kartik-v/yii2-editable": "dev-master",
+        "kartik-v/yii2-builder": "dev-master",
+        "kartik-v/yii2-widget-typeahead": "dev-master",
+        "maerduq/usm": "^1.1",
+        "kartik-v/yii2-widget-fileinput": "dev-master",
+        "kartik-v/yii2-markdown": "dev-master"
     },
     "require-dev": {
-        "yiisoft/yii2-debug": "~2.0.0",
-        "yiisoft/yii2-gii": "~2.0.0",
-        "yiisoft/yii2-faker": "~2.0.0",
-
-        "codeception/base": "^2.2.3",
-        "codeception/verify": "~0.3.1",
-        "codeception/specify": "~0.4.3"
+        "yiisoft/yii2-debug": "~2.0.12",
+        "yiisoft/yii2-gii": "~2.0.5",
+        "yiisoft/yii2-faker": "~2.0.4"
     },
     "config": {
-        "process-timeout": 1800
+        "process-timeout": 1800,
+        "fxp-asset": {
+            "installer-paths": {
+                "npm-asset-library": "vendor/npm",
+                "bower-asset-library": "vendor/bower"
+            }
+        }
     },
     "scripts": {
         "post-create-project-cmd": [
@@ -38,20 +55,19 @@
     },
     "extra": {
         "yii\\composer\\Installer::postCreateProject": {
-            "setPermission": [
-                {
-                    "runtime": "0777",
-                    "web/assets": "0777",
-                    "yii": "0755"
-                }
-            ],
+            "setPermission": [{
+                "runtime": "0777",
+                "web/assets": "0777",
+                "upload": "0777",
+                "yii": "0755"
+            }],
             "generateCookieValidationKey": [
                 "config/web.php"
             ]
-        },
-        "asset-installer-paths": {
-            "npm-asset-library": "vendor/npm",
-            "bower-asset-library": "vendor/bower"
         }
-    }
+    },
+    "repositories": [{
+        "type": "composer",
+        "url": "https://asset-packagist.org"
+    }]
 }

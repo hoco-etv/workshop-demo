@@ -10,8 +10,8 @@ body {
     padding: 0 0 60px;
 }
 
-.wrap > .container {
-    padding: 70px 15px 20px;
+.wrap>.container {
+    padding: 270px 15px 20px;
 }
 
 .footer {
@@ -36,8 +36,11 @@ body {
     font-style: italic;
 }
 
+
 /* add sorting icons to gridview sort links */
-a.asc:after, a.desc:after {
+
+a.asc:after,
+a.desc:after {
     position: relative;
     top: 1px;
     display: inline-block;
@@ -49,11 +52,13 @@ a.asc:after, a.desc:after {
 }
 
 a.asc:after {
-    content: /*"\e113"*/ "\e151";
+    content: /*"\e113"*/
+    "\e151";
 }
 
 a.desc:after {
-    content: /*"\e114"*/ "\e152";
+    content: /*"\e114"*/
+    "\e152";
 }
 
 .sort-numerical a.asc:after {
@@ -90,26 +95,420 @@ a.desc:after {
     margin: 0 0 15px 0;
 }
 
+
 /* align the logout "link" (button in form) of the navbar */
-.nav li > form > button.logout {
+
+.nav li>form>button.logout {
     padding: 15px;
     border: none;
 }
 
 @media(max-width:767px) {
-    .nav li > form > button.logout {
-        display:block;
+    .nav li>form>button.logout {
+        display: block;
         text-align: left;
         width: 100%;
         padding: 10px 15px;
     }
 }
 
-.nav > li > form > button.logout:focus,
-.nav > li > form > button.logout:hover {
+.nav>li>form>button.logout:focus,
+.nav>li>form>button.logout:hover {
     text-decoration: none;
 }
 
-.nav > li > form > button.logout:focus {
+.nav>li>form>button.logout:focus {
+    outline: none;
+}
+
+
+/* #my-navbar {
+    text-transform: uppercase;
+    background-color: #123456;
+    color: #678967;
+    font-weight: bold;
+    border: 0px;
+    border-radius: 0px;
+    margin: 0;
+  } */
+
+
+/* .my-navbar-brand img {
+
+    height: 100%;
+
+} */
+
+.klushok-logo {
+    position: absolute;
+    left: 50%;
+    margin-top: 60px;
+    margin-left: -169px;
+    margin-bottom: 40px;
+    max-height: 180px;
+}
+
+
+/* ETV navbar copypasta */
+
+#klushok-navbar {
+    text-transform: uppercase;
+    background: #B41F21;
+    color: #B41F21;
+    font-weight: bold;
+    border: 0px;
+    border-radius: 0px;
+    margin: 0;
+}
+
+
+/* line 202, ../../scss/_semicolon.scss */
+
+#klushok-navbar a {
+    color: #fff;
+    transition: all 0.1s ease-in-out;
+}
+
+
+/* line 207, ../../scss/_semicolon.scss */
+
+#klushok-navbar .navbar-header {
+    margin-left: 0px;
+    margin-right: 0px;
+    min-height: inherit;
+    color: #fff;
+}
+
+
+/* line 212, ../../scss/_semicolon.scss */
+
+#klushok-navbar .navbar-header button.navbar-toggle {
+    padding: 7px 10px;
+    margin-top: 2px;
+    margin-bottom: 2px;
+}
+
+
+/* line 216, ../../scss/_semicolon.scss */
+
+#klushok-navbar .navbar-header button.navbar-toggle:hover,
+#klushok-navbar .navbar-header button.navbar-toggle:focus {
+    background: #881819;
+}
+
+
+/* line 220, ../../scss/_semicolon.scss */
+
+#klushok-navbar .navbar-header button.navbar-toggle .icon-bar {
+    background-color: #fff;
+}
+
+
+/* line 226, ../../scss/_semicolon.scss */
+
+#klushok-navbar .logo_flag {
+    margin-top: 0px;
+    margin-bottom: -40px;
+    max-height: 180px;
+}
+
+@media (max-width: 992px) {
+    /* line 226, ../../scss/_semicolon.scss */
+    #klushok-navbar .logo_flag {
+        margin-top: -15px;
+        margin-bottom: 0px;
+        max-height: 0px;
+    }
+}
+
+
+/* line 237, ../../scss/_semicolon.scss */
+
+#klushok-navbar .logo_white {
+    margin-top: 5px;
+    max-height: 40px;
+    margin-left: -20px;
+}
+
+@media (min-width: 992px) {
+    /* line 237, ../../scss/_semicolon.scss */
+    #klushok-navbar .logo_white {
+        margin-top: -15px;
+        margin-bottom: 0px;
+        max-height: 0px;
+    }
+}
+
+
+/* line 248, ../../scss/_semicolon.scss */
+
+#klushok-navbar .navbar-collapse,
+#klushok-navbar .navbar-form {
+    padding: 0;
+}
+
+@media (max-width: 992px) {
+    /* line 248, ../../scss/_semicolon.scss */
+    #klushok-navbar .navbar-collapse,
+    #klushok-navbar .navbar-form {
+        margin-left: 0px;
+    }
+}
+
+@media (max-width: 992px) {
+    /* line 257, ../../scss/_semicolon.scss */
+    #klushok-navbar .navbar-collapse.in {
+        overflow-x: hidden;
+    }
+}
+
+
+/* line 262, ../../scss/_semicolon.scss */
+
+#klushok-navbar .dropdown-menu {
+    background-color: #B41F21;
+    border: 0px;
+}
+
+
+/* line 269, ../../scss/_semicolon.scss */
+
+#klushok-navbar .navbar-nav {
+    margin-left: -15px;
+}
+
+
+/* line 271, ../../scss/_semicolon.scss */
+
+#klushok-navbar .navbar-nav>li:not(:first-child) {
+    margin-left: 1px;
+}
+
+
+/* line 273, ../../scss/_semicolon.scss */
+
+#klushok-navbar .navbar-nav>li:not(:first-child)>a::before {
+    content: "|";
+    color: #fff;
+    position: absolute;
+    left: -2px;
+}
+
+
+/* line 282, ../../scss/_semicolon.scss */
+
+#klushok-navbar .navbar-nav li a {
+    /* padding-top: 10px;
+    padding-bottom: 10px; */
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+@media (max-width: 992px) {
+    /* line 282, ../../scss/_semicolon.scss */
+    #klushok-navbar .navbar-nav li a {
+        padding-left: 18px;
+    }
+}
+
+
+/* line 290, ../../scss/_semicolon.scss */
+
+#klushok-navbar .navbar-nav li a b {
+    display: none;
+}
+
+
+/* line 296, ../../scss/_semicolon.scss */
+
+#klushok-navbar .navbar-nav>li>a:hover,
+#klushok-navbar .navbar-nav>li>a:focus,
+#klushok-navbar .navbar-nav>.open>a,
+#klushok-navbar .navbar-nav>.open>a:hover,
+#klushok-navbar .navbar-nav>.open>a:focus,
+#klushok-navbar .dropdown-menu>li>a:hover,
+#klushok-navbar .dropdown-menu>li>a:focus {
+    background: #881819;
+}
+
+
+/* line 306, ../../scss/_semicolon.scss */
+
+#klushok-navbar .navbar-nav>.active>a,
+#klushok-navbar .navbar-nav>.active>a:hover,
+#klushok-navbar .navbar-nav>.active>a:focus,
+#klushok-navbar .navbar-nav .open .dropdown-menu>.active>a,
+#klushok-navbar .navbar-nav .open .dropdown-menu>.active>a:hover,
+#klushok-navbar .navbar-nav .open .dropdown-menu>.active>a:focus {
+    background: #B41F21;
+    color: #fff;
+}
+
+#loading_spinner {
+    height: 200px;
+    display: none;
+}
+
+#nomuney {
+    height: 200px;
+}
+
+#pricelist-container {
+    border: 1px solid #000000;
+}
+
+#pricelist-container h1 {
+    font-family: 'BEBAS';
+    /* src: url('../fonts/BEBAS.ttf') format("truetype"); */
+    width: 90%;
+    text-align: center;
+    font-size: 60px;
+    /* font-weight: normal; */
+    color: #000000;
+    border-bottom: 8px solid #000000;
+    line-height: 0.1em;
+    margin: 50px auto 20px;
+}
+
+@media screen and (max-width:700px) {
+    #pricelist-container h1 {
+        font-size: 45px;
+    }
+}
+
+#pricelist-container h1 span {
+    background: #fff;
+    padding: 0 12px;
+}
+
+#pricelist-container .title {
+    text-align: center;
+}
+
+#pricelist-container .column {
+    float: left;
+    padding: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#pricelist-container .left {
+    width: 46%;
+    margin-right: 4%;
+}
+
+#pricelist-container .right {
+    width: 46%;
+    margin-left: 4%;
+}
+
+@media screen and (max-width:700px) {
+    #pricelist-container .left {
+        width: 90%;
+        margin: auto 5%;
+    }
+    #pricelist-container .right {
+        width: 90%;
+        margin: auto 5%;
+    }
+}
+
+
+/* #pricelist-container .category {
+    font-weight: bold;
+    margin-top: 1.5em;
+} */
+
+#pricelist-container .header {
+    display: table;
+    font-weight: bold;
+    margin-top: 1.5em;
+    width: 100%;
+}
+
+#pricelist-container .item-container {
+    display: table-row;
+}
+
+#pricelist-container .item {
+    font-weight: normal;
+    display: table-cell;
+    width: 50%;
+    white-space: nowrap;
+}
+
+#pricelist-container .dot {
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    display: inline-block;
+    margin-left: 5px;
+    position: relative;
+}
+
+#pricelist-container .available {
+    background-color: #16c406;
+}
+
+#pricelist-container .limited {
+    background-color: #eb8715;
+}
+
+#pricelist-container .sold-out {
+    background-color: #eb1515;
+}
+
+#pricelist-container .unknown {
+    background-color: #ffffff;
+    border: 1px solid #000000;
+}
+
+
+/* Tooltip text */
+
+.dot .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    padding: 5px 0;
+    border-radius: 6px;
+    /* Position the tooltip text - see examples below! */
+    position: absolute;
+    z-index: 1;
+    top: -10px;
+    left: 15px;
+}
+
+
+/* Show the tooltip text when you mouse over the tooltip container */
+
+.dot:hover .tooltiptext {
+    visibility: visible;
+}
+
+
+/* align the logout "link" (button in form) of the navbar */
+
+.nav li>form>button.logout {
+    padding: 15px;
+    border: none;
+}
+
+@media(max-width:767px) {
+    .nav li>form>button.logout {
+        display: block;
+        text-align: left;
+        width: 100%;
+        padding: 10px 15px;
+    }
+}
+
+.nav>li>form>button.logout:focus,
+.nav>li>form>button.logout:hover {
+    text-decoration: none;
+}
+
+.nav>li>form>button.logout:focus {
     outline: none;
 }
