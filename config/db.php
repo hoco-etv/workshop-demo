@@ -2,8 +2,8 @@
 
 return [
     'class' => 'yii\db\Connection',
-    'dsn' => 'mysql:host=localhost;dbname=workshop',
+    'dsn' => 'mysql:host=bram-ubuntu.local;dbname=workshop',
     'username' => 'root',
-    'password' => '',
+    'password' => 'verysecret',
     'charset' => 'utf8',
 ];

@@ -28,3 +28,9 @@ phpunit.phar
 
 tests/_output/*
 tests/_support/_generated
+
+# dont add your own db config
+/config/db.php
+
+# ingore db data
+/data
